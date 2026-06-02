@@ -1,0 +1,33 @@
+npm init -y
+npm i express ejs express.ejs-layouts
+npm i --save-dev nodemon
+
+
+npm install nodemon --save-dev
+
+is to mark nodemon as a development dependency.
+
+Without --save-dev:
+
+it goes into "dependencies"
+
+With --save-dev:
+
+it goes into "devDependencies"
+
+Example:
+
+"devDependencies": {
+  "nodemon": "^3.0.0"
+}
+
+This tells other developers:
+
+“This package is only needed during development.”
+
+"main": "server.js",
+  "scripts": {
+    "start" : "node server.js",
+    "devStart" : "nodemon server.js"
+  },
+
